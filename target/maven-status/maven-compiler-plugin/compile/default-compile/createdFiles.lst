@@ -1,7 +1,9 @@
 shop\config\WebConfig.class
 shop\model\OrderDetail.class
-shop\service\impl\ProductServiceImpl.class
 shop\controller\HomeController.class
+shop\dao\impl\AccountDaoImpl.class
+shop\dao\AccountDao.class
+shop\service\impl\ProductServiceImpl.class
 shop\model\Order.class
 shop\model\Category.class
 shop\model\Product.class

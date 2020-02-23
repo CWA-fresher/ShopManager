@@ -12,13 +12,13 @@
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
 					<table class="table">
-						<c:if test="${empty sessionScope.cart }">
+						<c:if test="${empty sessionScope.myCartItems}">
 							<h1>Giỏ hàng của bạn đang trống !!!!!</h1>
 							<tr>
 								<td><a href="<c:url value="/product"/>">Thêm hàng vào giỏ</a></td>
 							</tr>
 						</c:if>
-						<c:if test="${not empty sessionScope.cart}">
+						<c:if test="${not empty sessionScope.myCartItems}">
 						<h2>Giỏ hàng của bạn</h2><br>
 							<tr>
 								<td>Mã</td>
@@ -28,7 +28,7 @@
 								<td>Số lượng</td>
 								<td>Action</td>
 							</tr>
-							<c:forEach var="c" items="${cart}">
+							<c:forEach var="c" items="${sessionScope.myCartItems}">
 								<tr>
 									<td>${c.value.product.code}</td>
 									<td>${c.value.product.name}</td>

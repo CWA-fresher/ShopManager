@@ -2,46 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eddb856-3ebb-4408-ba84-5dbdf4ddd00d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ShopManager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shop/dao/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shop/dao/impl/AccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/account.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/category.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/common/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/common/nav-top.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/common/nav.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/indexAdmin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/newAccount.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/newCategory.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/newProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/order.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/orderDetail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/product.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/cart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/checkout.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/common/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/common/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/common/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/product.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/product_detail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/mapper/AccountMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/model/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/model/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shop/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shop/resources/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/newAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/newAccount.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shop/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shop/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shop/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shop/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shop/model/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shop/model/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shop/model/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shop/model/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shop/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shop/model/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shop/model/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shop/model/OrderDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shop/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shop/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shop/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shop/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shop/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shop/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-02-20" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-02-20" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,13 +59,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.HTML" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -181,22 +158,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582170299713" />
-    <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1582171706509">
+    <state width="1323" height="124" key="GridCell.Tab.0.bottom" timestamp="1582192170509">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582171706509" />
-    <state width="1323" height="2" key="GridCell.Tab.0.center" timestamp="1582171706508">
+    <state width="1323" height="124" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582192170509" />
+    <state width="1323" height="124" key="GridCell.Tab.0.center" timestamp="1582192170509">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582171706508" />
-    <state width="1323" height="2" key="GridCell.Tab.0.left" timestamp="1582171706507">
+    <state width="1323" height="124" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582192170509" />
+    <state width="1323" height="124" key="GridCell.Tab.0.left" timestamp="1582192170509">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582171706507" />
-    <state width="1323" height="2" key="GridCell.Tab.0.right" timestamp="1582171706508">
+    <state width="1323" height="124" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582192170509" />
+    <state width="1323" height="124" key="GridCell.Tab.0.right" timestamp="1582192170509">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582171706508" />
+    <state width="1323" height="124" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582192170509" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1582187236580">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582187236580" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1582166054172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

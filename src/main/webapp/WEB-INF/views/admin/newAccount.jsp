@@ -6,7 +6,7 @@
 <body>
 <jsp:include page="common/nav.jsp"></jsp:include>
 <!--/. NAV TOP  -->
-<jsp:include page="common/nav-top.jsp"
+<jsp:include page="common/nav-top.jsp"/>
 	<!-- CONTENT -->
 <div id="wrapper">
     <div id="page-wrapper">
