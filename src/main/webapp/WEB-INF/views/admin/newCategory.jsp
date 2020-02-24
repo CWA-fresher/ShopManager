@@ -25,7 +25,7 @@
 					<div class="col-xs-12">
 						<div class="panel panel-default">
 							<div class="panel-heading"></div>
-							<form action="<c:url value='/admin/newCategory' />" method="post">
+							<form action="<c:url value="/admin/add-category/save" />" method="post">
 								<div class="panel-body">
 									<div class="sub-title"></div>
 									<div class="sub-title">Mã loại sản phẩm</div>
@@ -38,21 +38,15 @@
 										<input name="name" value="${category.name}" type="text"
 											class="form-control" placeholder="Nhập tên loại sản phẩm">
 									</div>
-									<!-- <div>
-										<div class="sub-title">Trạng thái</div>
+									<div>
+										<label class="sub-title">Trạng thái</label>
 										<div>
-											<div class="radio3 radio-check radio-success radio-inline">
-												<input type="radio" id="radio4" name="radio2"
-													value="option1" checked="checked"> <label
-													for="radio4">Hoạt động</label>
-											</div>
-											<div class="radio3 radio-check radio-inline">
-												<input type="radio" id="radio5" name="radio2"
-													value="option2"> <label for="radio5">Tạm
-													dừng</label>
-											</div>
+											<select name="active" class="selectbox" style="width: 300px;">
+												<option value="1" selected="selected">Hoạt động</option>
+												<option value="0">Tạm dừng</option>
+											</select>
 										</div>
-									</div> -->
+									</div>
 									<button type="submit" class="btn btn-success">Lưu</button>
 								</div>
 							</form>

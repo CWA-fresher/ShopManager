@@ -23,10 +23,10 @@ public class Order {
     @Column(name = "order_date")
     private Date date;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "account_id")
     private Account account;
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order",fetch = FetchType.EAGER)
     private Set<OrderDetail> orderDetails;
 }

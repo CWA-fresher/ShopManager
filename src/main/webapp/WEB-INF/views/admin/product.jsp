@@ -1,66 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Quản lý tài khoản</title>
-<!-- Bootstrap Styles-->
-<link href="../../assets/css/bootstrap.css" rel="stylesheet" />
-<!-- FontAwesome Styles-->
-<link href="../../assets/css/font-awesome.css" rel="stylesheet" />
-<!-- Morris Chart Styles-->
+<%@ page language="java" contentType="text/html; charset=utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<!-- Custom Styles-->
-<link href="../../assets/css/custom-styles.css" rel="stylesheet" />
-<!-- Google Fonts-->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans'
-	rel='stylesheet' type='text/css' />
-<!-- TABLE STYLES-->
-<link href="../../assets/js/dataTables/dataTables.bootstrap.css"
-	rel="stylesheet" />
-</head>
+<!DOCTYPE html>
+<html>
+<jsp:include page="common/head.jsp"></jsp:include>
 <body>
-	<nav class="navbar navbar-default top-navbar" role="navigation">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-				data-target=".sidebar-collapse">
-				<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="index.html"><strong> Baby
-					Shop Admin</strong></a>
-			<div id="sideNav">
-				<i class="fa fa-bars icon"></i>
-			</div>
-		</div>
-	</nav>
-	<!--/. NAV TOP  -->
-	<nav class="navbar-default navbar-side" role="navigation">
-		<div class="sidebar-collapse">
-			<ul class="nav" id="main-menu">
-				<li><a  href="indexAdmin.jsp"><i
-						class="fa fa-dashboard"></i>Tổng hợp</a></li>
-				<li><a href="account.jsp"><i class="fa fa-qrcode"></i> Tài
-						khoản</a></li>
-				<li><a href="product.jsp" class="active-menu"><i class="fa fa-table"></i> Sản
-						phẩm</a></li>
-				<li><a href="#"><i class="fa fa-sitemap"></i>Danh mục tham
-						chiếu<span class="fa arrow"></span></a>
-					<ul class="nav nav-second-level">
-						<li><a href="category.jsp">Loại sản phẩm</a></li>
-						<li><a href="#">Hãng sản xuất</a></li>
-					</ul></li>
-				<li><a href="order.jsp"><i class="fa fa-table"></i>Đơn hàng</a></li>
-				<li><a href="../index.jsp"><i class="fa fa-table"></i>Trang chủ</a></li>
-				<li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Đăng
-						xuất</a></li>
-			</ul>
-		</div>
-	</nav>
-	<!-- /. NAV SIDE  -->
-
-
+<jsp:include page="common/nav.jsp"></jsp:include>
+<!--/. NAV TOP  -->
+<jsp:include page="common/nav-top.jsp"></jsp:include>
 	<div id="wrapper">
 		<div id="page-wrapper">
 			<div class="header">
@@ -69,7 +19,7 @@
 					<li><a href="#">Home</a></li>
 					<li class="active">Quản lý sản phẩm</li>
 				</ol>
-				<a href="newProduct.jsp" style="color: black;">Thêm mới</a>
+				<a href="<c:url value="/admin/add-product"/>" style="color: black;">Thêm mới</a>
 			</div>
 	
 				
@@ -97,18 +47,20 @@
 											</tr>
 										</thead>
 										<tbody>
+										<c:forEach items="${listProduct}" var="product">
 											<tr class="odd gradeX">
-												<td>1</td>
-												<td>C01</td>
-												<td>Cũi gỗ cao cấp</td>
-												<td><img src="img/cui1.jpg" height="50px;"></td>
-												<td>2400000</td>
-												<td width="200px">Cũi cao cấp được làm từ nguyên liệu tốt nhất</td>
+												<td>${product.id}</td>
+												<td>${product.code}</td>
+												<td>${product.name}</td>
+												<td><img src="${product.image}" height="50px;"></td>
+												<td>${product.price}</td>
+												<td width="200px">${product.description}</td>
 												<td>Cũi</td>
-												<td>Hoạt động</td>
-												<td><button class="btn btn-success">Sửa</button>
-													<button class="btn btn-danger">Xóa</button></td>
+												<td>${product.active}</td>
+												<td><button class="btn btn-success" href="<c:url value="/admin/edit-product/${product.id}" />">Sửa</button>
+													<button class="btn btn-danger" href="<c:url value="/admin/product/remove" />">Xóa</button></td>
 											</tr>
+										</c:forEach>
 
 										</tbody>
 									</table>

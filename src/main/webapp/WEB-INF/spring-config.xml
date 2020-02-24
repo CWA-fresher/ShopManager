@@ -15,7 +15,7 @@
 	<!-- Spring MVC Annotation -->
 	<context:annotation-config />
 	<mvc:annotation-driven />
-
+	<mvc:resources location="assets/" mapping="assets/**"></mvc:resources>
 	<!-- Cấu hình view -->
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
@@ -37,15 +37,21 @@
 	</bean>
 	<!-- Cấu hình Hibernate -->
 	<bean id="sessionFactory"
-		  class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		  class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="hibernateProperties" value="classpath:hibernate.properties"/>
 		<property name="packagesToScan" value="com.cwa.shop.model" />
 	</bean>
-
+	<!-- message -->
+	<bean id="messageSource"
+		  class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="defaultEncoding" value="UTF-8" />
+		<property name="basenames" value="classpath:message_vi">
+		</property>
+	</bean>
 	<!-- Transaction Manager - Quản lý phiên giao dịch -->
 	<bean id="transactionManager"
-		  class="org.springframework.orm.hibernate4.HibernateTransactionManager"
+		  class="org.springframework.orm.hibernate5.HibernateTransactionManager"
 		  p:sessionFactory-ref="sessionFactory" />
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
