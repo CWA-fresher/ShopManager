@@ -37,7 +37,7 @@ public class Account {
     @Column(name = "account_active")
     private int active;
 
-    @OneToMany(mappedBy = "account")
+    @OneToMany(mappedBy = "account",fetch = FetchType.EAGER)
     private Set<Order> orders;
 }
 

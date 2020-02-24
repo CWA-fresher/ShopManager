@@ -1,18 +1,19 @@
 package com.cwa.shop.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Set;
 
-@Data
+
+@Setter
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "product")
-public class Product {
+public class Product implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -31,23 +32,17 @@ public class Product {
     @Column(name = "product_price")
     private Double price;
 
-    @Column(name = "product_amount")
-    private int amount;
-
-    @Column(name = "product_sold")
-    private int sold;
-
     @Column(name = "product_description")
     private String description;
 
     @Column(name = "product_active")
     private int active;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "category_id")
     private Category category;
 
-    @OneToMany(mappedBy = "product")
+    @OneToMany(mappedBy = "product",fetch = FetchType.EAGER)
     private Set<OrderDetail> orderDetails;
 }
 

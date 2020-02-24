@@ -30,11 +30,11 @@
 		<div class="zigzag-bottom"></div>
 		<div class="container">
 			<div class="row">
-				<c:forEach var="p" items="${products}">
+				<c:forEach var="p" items="${listProduct}">
 					<div class="col-md-3 col-sm-6">
 						<div class="single-shop-product">
 							<div class="product-upper">
-								<a href="#"><img src="img/${p.image}"></a>
+								<a href="#"><img src="${p.image}"></a>
 							</div>
 							<h2>
 								<a href="">${p.name}</a>
@@ -45,7 +45,7 @@
 
 							<div class="product-option-shop">
 								<!-- 	Thêm vào giỏ -->
-									<form action="<c:url value="/cart"/>" method="post">
+									<form action="#" method="post">
 										<input type="hidden" name="code" value="${p.code}"> <input
 											type="hidden" name="name" value="${p.name}"> <input
 											type="hidden" name="image" value="${p.image}"> <input

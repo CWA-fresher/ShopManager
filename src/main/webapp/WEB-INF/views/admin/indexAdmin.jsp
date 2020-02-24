@@ -12,7 +12,7 @@
 		<div id="page-wrapper">
 			<div class="header">
 				<h2 class="page-header">
-					<small>Xin chào Admin BabyShop </small>Đỗ Duy Mậu
+					<small>Xin chào Admin BabyShop </small>
 				</h2>
 				<ol class="breadcrumb">
 					<li><a href="#">Home</a></li>
