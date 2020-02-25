@@ -20,20 +20,14 @@ public class AccountDaoImpl implements AccountDao {
     private SessionFactory sessionFactory;
 
     @Override
-    @Transactional
     public List<Account> getAllAccounts() {
         Session session = sessionFactory.getCurrentSession();
-        CriteriaBuilder cb = session.getCriteriaBuilder();
-        CriteriaQuery<Account> cp = cb.createQuery(Account.class);
-        Root<Account> root = cp.from(Account.class);
-        cp.select(root);
-        Query query = session.createQuery(cp);
-        return query.getResultList();
+        List<Account> accounts = session.createQuery("FROM Account").list();
+        return accounts;
     }
 
 
     @Override
-    @Transactional
     public void deleteAccount(int id) {
         Session session = sessionFactory.getCurrentSession();
         Account account = session.byId(Account.class).load(id);
@@ -42,7 +36,6 @@ public class AccountDaoImpl implements AccountDao {
     }
 
     @Override
-    @Transactional
     public void saveAccount(Account account) {
         Session currentSession = sessionFactory.getCurrentSession();
         currentSession.saveOrUpdate(account);
@@ -51,7 +44,6 @@ public class AccountDaoImpl implements AccountDao {
     }
 
     @Override
-    @Transactional
     public Account getAccount(int id) {
         Session session = sessionFactory.getCurrentSession();
         Account theAccount = session.get(Account.class, id);

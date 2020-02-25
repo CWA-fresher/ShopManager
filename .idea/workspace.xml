@@ -2,61 +2,211 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eddb856-3ebb-4408-ba84-5dbdf4ddd00d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dao/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dao/ProductDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dao/impl/CategoryDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dao/impl/ProductDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dto/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dto/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/validator/ProductValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/message_vi.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/editProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ShopManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ShopManager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/account/add-acc.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/account/edit-acc.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/account/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/category/add-category.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/category/edit-category.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/category/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/layout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/login/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/menu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/product/add-product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/product/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/product/edit-product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/product/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/product/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/light-bootstrap-dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/pe-icon-7-stroke.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/Pe-icon-7-stroke.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/Pe-icon-7-stroke.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/Pe-icon-7-stroke.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/face-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/face-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/face-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/face-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/face-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/face-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/face-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/face-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/sidebar-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/sidebar-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/sidebar-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/sidebar-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/sidebar-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/bootstrap-checkbox-radio-switch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/bootstrap-notify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/bootstrap-select(1).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/bootstrap-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/bootstrap.min(1).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/chartist.min(1).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/chartist.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/demo(1).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery-1.10.2(1).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery-3.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/light-bootstrap-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/imgfamilies-clipart-5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dao/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dao/impl/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dao/impl/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dao/impl/CategoryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dao/impl/CategoryDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/dto/ProductDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/model/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/model/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/model/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/common/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/common/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/common/nav-top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/common/nav-top.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/indexAdmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/indexAdmin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/newCategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/newCategory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/newProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/newProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwa/shop/validator/ProductValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwa/shop/validator/ProductValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/configs/spring-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/account.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/category.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/common/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/common/nav-top.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/common/nav.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/editProduct.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/indexAdmin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/newAccount.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/newCategory.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/newProduct.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/order.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/orderDetail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/product.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/cart.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/checkout.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/common/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/common/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/common/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/product.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/product_detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/register.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shop/config/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shop/controller/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shop/dao/AccountDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shop/dao/impl/AccountDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shop/model/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shop/model/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shop/model/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shop/model/OrderDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shop/model/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shop/service/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shop/service/impl/ProductServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/checkbox3.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/custom-styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/font-awesome/fonts/fontawesome-webfontba72.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/font-awesome/fonts/fontawesome-webfontba72.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/font-awesome/fonts/fontawesome-webfontba72.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/font-awesome/fonts/fontawesome-webfontba72.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/font-awesome/fonts/fontawesome-webfontd41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/fonts/glyphicons-halflings-regulard41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/bg-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/Lightweight-Chart/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/Lightweight-Chart/chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/Lightweight-Chart/cssCharts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/Lightweight-Chart/index - Copy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/Lightweight-Chart/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/Lightweight-Chart/jquery.chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/Lightweight-Chart/jquery.chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/chart-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/chartjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/custom-scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/dataTables/dataTables.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/dataTables/dataTables.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/dataTables/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/easypiechart-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/easypiechart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery-1.10.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery-1.10.2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.metisMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/morris/morris-0.4.3.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/morris/morris.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/morris/raphael-2.1.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/select2.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/datepicker3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/cui1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/cui2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/cui3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/cui4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/cui5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/cuigo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/lgbaby.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/nem1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/nem2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/nem3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/nem4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/nem5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/quay1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/quay2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/quay3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/quay4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/quay5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ss1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ss2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ss3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ss4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ss5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bxslider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.11.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery.easing.1.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery.sticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/script.slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/lib/encflt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwa/shop/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwa/shop/controller/AccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwa/shop/controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwa/shop/controller/CartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwa/shop/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwa/shop/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwa/shop/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwa/shop/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwa/shop/dao/impl/AccountDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwa/shop/dao/impl/AccountDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwa/shop/dao/impl/CategoryDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwa/shop/dao/impl/CategoryDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwa/shop/dto/ProductDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwa/shop/dto/ProductDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwa/shop/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwa/shop/model/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwa/shop/model/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwa/shop/model/OrderDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwa/shop/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwa/shop/service/impl/CategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwa/shop/validator/ProductValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwa/shop/validator/ProductValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-02-20" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-02-20" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-02-24" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-02-24" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/common/head_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/common/head_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/common/nav_002dtop_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/common/nav_002dtop_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/common/nav_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/common/nav_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/indexAdmin_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/indexAdmin_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/indexAdmin_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/indexAdmin_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/newProduct_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/newProduct_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/product_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/admin/product_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +249,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/cwa/shop/dao/impl" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -111,17 +261,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ShopManager\src\main\webapp\WEB-INF\views" />
       <recent name="D:\ShopManager\src\main\java\com\cwa\shop\dao\impl" />
       <recent name="D:\ShopManager\src\main\java\com\cwa\shop\dao" />
       <recent name="D:\ShopManager\src\main\java\com\cwa\shop\service\impl" />
       <recent name="D:\ShopManager\src\main\java\com\cwa\shop\service" />
-      <recent name="D:\ShopManager\src\main\java\com\cwa\shop\controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ShopManager\src\main\webapp\WEB-INF\views\admin" />
+      <recent name="D:\ShopManager\src\main\webapp\WEB-INF" />
+      <recent name="D:\ShopManager\src\main\webapp\configs" />
       <recent name="D:\project\ShopManager\src\main\webapp\WEB-INF\pages\user\common" />
       <recent name="D:\project\ShopManager\src\main\webapp\WEB-INF\pages\admin\common" />
-      <recent name="D:\project\ShopManager\src\main\webapp" />
-      <recent name="D:\project\ShopManager\src\main\webapp\WEB-INF\pages\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -246,6 +397,11 @@
       <workItem from="1582252427326" duration="29389000" />
       <workItem from="1582513645447" duration="27412000" />
       <workItem from="1582547431561" duration="7296000" />
+      <workItem from="1582556718763" duration="3282000" />
+      <workItem from="1582600606987" duration="7424000" />
+      <workItem from="1582612126198" duration="5082000" />
+      <workItem from="1582618310180" duration="7165000" />
+      <workItem from="1582634846017" duration="6630000" />
     </task>
     <servers />
   </component>
@@ -284,59 +440,63 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="221" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1582265864890" />
-    <state width="434" height="466" key="DebuggerActiveHint" timestamp="1582551006602">
+    <state width="434" height="466" key="DebuggerActiveHint" timestamp="1582635445659">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="434" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1582551006602" />
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1582554079892">
+    <state width="434" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1582635445658" />
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1582615693171">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582554079892" />
-    <state width="1323" height="201" key="GridCell.Tab.0.bottom" timestamp="1582554749463">
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582615693171" />
+    <state width="1323" height="125" key="GridCell.Tab.0.bottom" timestamp="1582640927807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="13" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1582188125606" />
-    <state width="1323" height="201" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582554749463" />
-    <state width="1323" height="201" key="GridCell.Tab.0.center" timestamp="1582554749463">
+    <state width="1323" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582640927807" />
+    <state width="1323" height="125" key="GridCell.Tab.0.center" timestamp="1582640927806">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="13" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1582188125605" />
-    <state width="1323" height="201" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582554749463" />
-    <state width="1323" height="201" key="GridCell.Tab.0.left" timestamp="1582554749462">
+    <state width="1323" height="125" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582640927806" />
+    <state width="1323" height="125" key="GridCell.Tab.0.left" timestamp="1582640927806">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="13" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1582188125604" />
-    <state width="1323" height="201" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582554749462" />
-    <state width="1323" height="201" key="GridCell.Tab.0.right" timestamp="1582554749463">
+    <state width="1323" height="125" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582640927806" />
+    <state width="1323" height="125" key="GridCell.Tab.0.right" timestamp="1582640927807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="13" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1582188125606" />
-    <state width="1323" height="201" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582554749463" />
-    <state width="1323" height="2" key="GridCell.Tab.1.bottom" timestamp="1582554098482">
+    <state width="1323" height="125" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582640927807" />
+    <state width="1323" height="21" key="GridCell.Tab.1.bottom" timestamp="1582638744000">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582554098482" />
-    <state width="1323" height="2" key="GridCell.Tab.1.center" timestamp="1582554098481">
+    <state width="1323" height="21" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582638744000" />
+    <state width="1323" height="21" key="GridCell.Tab.1.center" timestamp="1582638743999">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1582554098481" />
-    <state width="1323" height="2" key="GridCell.Tab.1.left" timestamp="1582554098480">
+    <state width="1323" height="21" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1582638743999" />
+    <state width="1323" height="21" key="GridCell.Tab.1.left" timestamp="1582638743999">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1582554098480" />
-    <state width="1323" height="2" key="GridCell.Tab.1.right" timestamp="1582554098481">
+    <state width="1323" height="21" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1582638743998" />
+    <state width="1323" height="21" key="GridCell.Tab.1.right" timestamp="1582638743999">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1582554098481" />
+    <state width="1323" height="21" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1582638743999" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1582267227775">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1582187002819" />
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582267227775" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1582252424901">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1582634848954">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582252424901" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582634848954" />
+    <state x="90" y="69" key="new project wizard" timestamp="1582615702433">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="90" y="69" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1582615702433" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1582528762614">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -350,14 +510,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/ProductController.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cwa/shop/controller/ProductController.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/cwa/shop/dao/impl/CategoryDaoImpl.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

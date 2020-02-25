@@ -12,22 +12,19 @@ public class ProductValidator implements Validator {
 
     @Override
     public void validate(Object o, Errors errors) {
-//        ProductDto product = (ProductDto) o;
-//        if (product.getCode()==null){
-//            errors.rejectValue("code","NotEmpty");
-//        }
-//        if (product.getCode().trim().length() == 0) {
-//            errors.rejectValue("code", "NotEmpty");
-//        }
-//        if (product.getName().trim().length()==0){
-//            errors.rejectValue("name", "NotEmpty");
-//        }
-//        if (product.getPrice() == Double.valueOf(0)){
-//            errors.rejectValue("price", "NotEmpty");
-//        }
-//        if (product.getImage()==null){
-//            errors.rejectValue("image", "NotEmpty");
-//        }
+        ProductDto product = (ProductDto) o;
+        if (product.getCode().trim().length() == 0) {
+            errors.rejectValue("code", "NotEmpty");
+        }
+        if (product.getName().trim().length()==0){
+            errors.rejectValue("name", "NotEmpty");
+        }
+        if (product.getPrice() == Double.valueOf(0)){
+            errors.rejectValue("price", "NotEmpty");
+        }
+        if (product.getImage()==null){
+            errors.rejectValue("image", "NotEmpty");
+        }
 
     }
 }

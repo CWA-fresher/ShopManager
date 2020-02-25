@@ -10,10 +10,10 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-//cai nay ko phai để đây@Transactional(rollbackFor = Exception.class)
 public class CategoryServiceImpl implements CategoryService {
     @Autowired
     private CategoryDao categoryDao;
+
     @Override
     public List<Category> getAllCategory() {
         return categoryDao.getAllCategory();

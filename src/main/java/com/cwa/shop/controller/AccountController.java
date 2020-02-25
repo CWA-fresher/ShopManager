@@ -22,45 +22,45 @@ public class AccountController {
     @GetMapping("/list")
     public String listAccounts(Model model) {
         List<Account> theAccounts = accountService.getAllAccounts();
-        model.addAttribute("account", theAccounts);
-        return "admin/account";
+        model.addAttribute("listAccount", theAccounts);
+        return "account/index";
     }
 
     @PostMapping("/saveAccount")
     public String saveAccount(@Validated @ModelAttribute("account") Account theAccount, BindingResult
             theBindingResult) {
         if (theBindingResult.hasErrors()) {
-            return "admin/newAccount";
+            return "account/index";
         }
         accountService.saveAccount(theAccount);
-        return "redirect :/admin/account";
+        return "redirect:/admin/account/list";
     }
 
-    @PostMapping("/updateAccount")
-    public String showUpdateForm(@RequestParam("accountId") int theId, Model theModel) {
+    @GetMapping("/updateAccount/{id}")
+    public String showUpdateForm(@PathVariable("id") int theId, Model theModel) {
         Account theAccount = accountService.getAccount(theId);
         theModel.addAttribute("account", theAccount);
-        return "admin/newAccount";
+        return "account/edit-acc";
 
     }
 
-    @PostMapping("/addAccount")
+    @GetMapping("/addAccount")
     public String showAddForm(Model theModel) {
         theModel.addAttribute("account", new Account());
-        return "admin/newAccount";
+        return "account/add-acc";
 
     }
 
-    @PostMapping("/delete{theId}")
-    public String deleteAccount(@PathVariable @RequestParam("accountId") int theId) {
+    @PostMapping("/delete/{id}")
+    public String deleteAccount(@PathVariable("id") int theId) {
         accountService.deleteAccount(theId);
         return "redirect :/admin/account";
     }
 
-    @GetMapping("/list{theId}")
+    @GetMapping("/list/{theId}")
     public String showAccountById(@PathVariable @RequestParam("accountId") int theId, Model theModel) {
         Account theAccount = accountService.getAccount(theId);
         theModel.addAttribute("account", theAccount);
-        return "admin/account";
+        return "account/index";
     }
 }
