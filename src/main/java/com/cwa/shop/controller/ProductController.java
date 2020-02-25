@@ -31,44 +31,44 @@ public class ProductController {
     @GetMapping("/admin/product")
     public String indexProductAdmin(Model model) {
         model.addAttribute("listProduct", productService.getAllProduct());
-        return "admin/product";
+        return "product/index";
     }
 
     @GetMapping("/admin/add-product")
     public String formAddProduct(ModelMap model) {
         model.addAttribute("productDto", new ProductDto());
         model.addAttribute("listCategory",categoryService.getAllCategory());
-        return "admin/newProduct";
+        return "product/add-product";
     }
 
     @GetMapping("/admin/edit-product/{id}")
     public String formEditProduct(@PathVariable("id") int id, ModelMap model) {
-        model.addAttribute("productDto", productService.getProduct(id));
-        return "admin/editProduct";
+        model.addAttribute("product", productService.getProduct(id));
+        return "product/edit-product";
     }
 
     @PostMapping("/admin/add-product/save")
-    public String addProduct(@ModelAttribute(value = "productDto") @Validated ProductDto productDto,
+    public String addProduct(@ModelAttribute(value = "productDto") ProductDto productDto,
                              BindingResult result, RedirectAttributes attributes) {
         ProductValidator productValidator = new ProductValidator();
         productValidator.validate(productDto, result);
         if (result.hasErrors()) {
-            return "admin/newProduct";
+            return "product/add-product";
         }
         productService.createProduct(productDto);
-        attributes.addFlashAttribute("Success", "Lưu sản phẩm thành công");
+        attributes.addFlashAttribute("message", "Lưu sản phẩm thành công");
         return "redirect:/admin/product";
     }
 
     @PostMapping("/admin/edit-product/update")
-    public String editProduct(@Validated @ModelAttribute("productDto") ProductDto productDto, BindingResult result, RedirectAttributes attributes) {
+    public String editProduct(@Validated @ModelAttribute("product") ProductDto productDto, BindingResult result, RedirectAttributes attributes) {
         ProductValidator productValidator = new ProductValidator();
         productValidator.validate(productDto, result);
         if (result.hasErrors()) {
-            return "admin/editProduct";
+            return "product/edit-product";
         }
         productService.editProduct(productDto);
-        attributes.addFlashAttribute("Success","Sửa sản phẩm thành công");
+        attributes.addFlashAttribute("message","Sửa sản phẩm thành công");
         return "redirect:/admin/product";
     }
 
@@ -82,12 +82,12 @@ public class ProductController {
     @GetMapping("/product/detail/{id}")
     public String detailProduct(@PathVariable("id") int id, ModelMap model) {
         model.addAttribute("product", productService.getProduct(id));
-        return "user/product_detail";
+        return "";
     }
 
     @GetMapping("/product")
     public String indexProductUser(Model model) {
         model.addAttribute("listProduct", productService.getAllProduct());
-        return "user/product";
+        return "";
     }
 }
