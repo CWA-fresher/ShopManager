@@ -27,7 +27,7 @@
 
 						</div>
 						<div class="content">
-							<form:form action="/admin/category/addCategory"
+							<form:form action="/admin/category/saveCategory"
 								method="POST" commandName="category">
 								<!-- 2 Cột  -->
 								<div class="row">

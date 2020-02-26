@@ -61,24 +61,17 @@
 												</c:when>
 											</c:choose></td>
 											<td><a
-												href="#"
+												href="admin/category/updateCategory/${category.id}"
 												type="button" rel="tooltip" title="Sửa"
 												class="btn btn-danger btn-xs">Sửa</a> <a
-												href="#"
+												href="admin/category/delete/${category.id}"
 												type="button" rel="tooltip" title="Xóa"
-												onclick="return confirm('Bạn chắc chắn chứ ?')"
+												onclick="return confirm('Bạn muốn xóa ư')"
 												class="btn btn-success btn-xs">Xóa</a></td>
 										</tr>
 									</c:forEach>
 								</tbody>
 							</table>
-
-							<div style="margin: 10px; text-align: right;">
-								<c:forEach begin="1" end="${rowCount}" varStatus="row">
-									<a type="button" href="admin/contract/?page=${row.index}"
-										class="btn btn-danger btn-xs btn-fill">${row.index}</a>
-								</c:forEach>
-							</div>
 
 						</div>
 					</div>

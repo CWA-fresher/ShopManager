@@ -84,8 +84,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Quyền Truy Cập: (<span style="color: red;">*</span>)<form:errors
-                                                path="access" class="error"/></label>
+                                        <label>Quyền Truy Cập: (<span style="color: red;">*</span>)</label>
                                         <form:select path="role" class="form-control">
                                             <form:option value="ADMIN">Quản Trị Viên</form:option>
                                             <form:option value="USER">Người dùng</form:option>

@@ -32,8 +32,8 @@
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
 		p:driverClassName="org.hibernate.dialect.MySQL8Dialect"
-		p:url="jdbc:mysql://localhost:32768/shop"
-		p:username="root" p:password="1234">
+		p:url="jdbc:mysql://localhost:3306/shop"
+		p:username="root" p:password="1111">
 	</bean>
 	<!-- Cấu hình Hibernate -->
 	<bean id="sessionFactory"

@@ -27,12 +27,12 @@ public class AccountController {
     }
 
     @PostMapping("/saveAccount")
-    public String saveAccount(@Validated @ModelAttribute("account") Account theAccount, BindingResult
+    public String saveAccount(@Validated @ModelAttribute("account") Account account, BindingResult
             theBindingResult) {
         if (theBindingResult.hasErrors()) {
             return "account/index";
         }
-        accountService.saveAccount(theAccount);
+        accountService.saveAccount(account);
         return "redirect:/admin/account/list";
     }
 
@@ -51,10 +51,10 @@ public class AccountController {
 
     }
 
-    @PostMapping("/delete/{id}")
+    @GetMapping("/delete/{id}")
     public String deleteAccount(@PathVariable("id") int theId) {
         accountService.deleteAccount(theId);
-        return "redirect :/admin/account";
+        return "redirect:/admin/account/list";
     }
 
     @GetMapping("/list/{theId}")
