@@ -76,7 +76,7 @@ public class CategoryController {
         return "redirect:/admin/category/listCategory";
     }
 
-    @GetMapping("/updateAccount/{id}")
+    @GetMapping("/updateCategory/{id}")
     public String showUpdateForm(@PathVariable("id") int theId, Model theModel) {
         Category theCategory = categoryService.findById(theId);
         theModel.addAttribute("category", theCategory);
